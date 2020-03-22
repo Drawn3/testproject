@@ -1,6 +1,6 @@
 # Nuxt
 
-> My cat&#39;s pajamas Nuxt.js project
+> Test task
 
 ## Build Setup
 

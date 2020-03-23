@@ -3,7 +3,7 @@
     <form @submit.prevent="loginUser" class="form-wrap">
       <div class="form-group">
         <label for="Login">Логин</label>
-        <input type="text" class="form-control" id="Login" aria-describedby="emailHelp" v-model="login">
+        <input type="text" class="form-control" id="Login" v-model="login">
       </div>
       <div class="form-group">
         <label for="Password">Пароль</label>
@@ -19,9 +19,8 @@
 export default {
   components: {   
   },
-  //middleware: 'auth',
   data () {
-    return{
+    return {
       login:'',
       password:''
     }

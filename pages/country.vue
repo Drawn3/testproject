@@ -22,19 +22,19 @@
     <div class="clear"></div>
     <div class="modal-window" v-bind:class="{'active': isActive}">
       <div class="wrap" v-if="index == 1">
-          <div v-for="(country, index) of regions" :key="index" class="name-list">
+          <div v-for="(country, index) in regions" :key="index" class="name-list">
             <input type="checkbox" v-model="checkRegion" v-bind:value="country">
             <span>{{country}}</span>
           </div>
       </div>
       <div class="wrap" v-else-if="index == 2">
-          <div v-for="(country, index) of currencies" :key="index" class="name-list">
+          <div v-for="(country, index) in currencies" :key="index" class="name-list">
             <input type="checkbox" v-model="checkCurrencies" v-bind:value="country">
             <span>{{country}}</span>
           </div>
       </div>
       <div class="wrap" v-else>
-          <div v-for="(country, index) of languages" :key="index" class="name-list">
+          <div v-for="(country, index) in languages" :key="index" class="name-list">
             <input type="checkbox" v-model="checkLanguages" v-bind:value="country">
             <span>{{country}}</span>
           </div>
@@ -66,7 +66,6 @@ export default {
       currenciesArray: [],
       regionArray: [],
       languagessArray: [],
-      hi: [],
       watch: '',
       isActive: false,
       index: null,
